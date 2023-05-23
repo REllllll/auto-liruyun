@@ -48,6 +48,7 @@ def wait_for_video():
 
 
 def main():
+    pyautogui.sleep(5)
     screen = ImageGrab.grab()
     unit_list = get_unit(screen)
     for unit in unit_list:
