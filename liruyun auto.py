@@ -21,7 +21,7 @@ class Unit():
 
 def get_unit(screen : Image.Image):
     unit_list = []
-    location_list = pyautogui.locateAll('liru class video button.jpg',screen,confidence=0.9)
+    location_list = pyautogui.locateAll('liru_class_video_button.jpg',screen,confidence=0.9)
     for location in location_list:
         unit_list.append(Unit(location,'unit'))
     return unit_list
@@ -32,13 +32,13 @@ def play_video():
     pyautogui.moveTo(pyautogui.locateOnScreen('position_scroll.jpg'))
     #scroll to the bottom
     pyautogui.scroll(-1000)
-    pyautogui.click(pyautogui.locateOnScreen('play button.jpg'))
+    pyautogui.click(pyautogui.locateOnScreen('play_button.jpg'))
     pass
 
 def wait_for_video():
     while True:
         pyautogui.sleep(1)
-        position = pyautogui.locateOnScreen('play button.jpg')
+        position = pyautogui.locateOnScreen('play_button.jpg')
         if position == None:
             continue
         else:
