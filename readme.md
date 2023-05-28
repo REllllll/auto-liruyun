@@ -14,3 +14,11 @@
 
 1. 获取当前用户的课程列表
 
+
+### 使用pyinstaller打包
+
+```bash
+pip install pyinstaller
+pyinstaller -F liruyun_auto.py
+```
+

@@ -30,8 +30,8 @@ time.sleep(1)
 browser.find_element(By.ID, "expandable_branch_20_14426").click()
 time.sleep(1)
 chinese_group_list = ["一", "二", "三", "四", "五", "六", "七", "八", "九", "十"]
-for a in range(10):
-
+for a in range(7):
+    a += 3
     group_unit = browser.find_elements(By.CLASS_NAME, "item-content-wrap")
     for group in group_unit:
         if f"第{chinese_group_list[a]}讲" in group.text:
@@ -42,7 +42,7 @@ for a in range(10):
     unit_list = browser.find_elements(By.CLASS_NAME, "item-content-wrap")
     current_unit_num = 0
     # select the unit by the text which includes the keyword "【视频】"
-    for i in range(len(unit_list)):
+    for i in range(len(unit_list)//2):
         unit_list = browser.find_elements(By.CLASS_NAME, "item-content-wrap")
         video_list = []
         for unit in unit_list:
