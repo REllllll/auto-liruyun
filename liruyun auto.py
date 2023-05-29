@@ -22,7 +22,6 @@ browser.find_element(By.ID, "password").send_keys(password)
 browser.find_element(By.CLASS_NAME,
                      "btn.btn-primary.btn-block.auth-login-btn").click()
 time.sleep(1)
-# stop the browser for 5 seconds
 
 browser.find_element(By.CLASS_NAME, "float-right.login-check-comfirm").click()
 time.sleep(1)
@@ -30,8 +29,9 @@ time.sleep(1)
 browser.find_element(By.ID, "expandable_branch_20_14426").click()
 time.sleep(1)
 chinese_group_list = ["一", "二", "三", "四", "五", "六", "七", "八", "九", "十"]
-for a in range(10):
 
+for a in range(7):
+    a += 3
     group_unit = browser.find_elements(By.CLASS_NAME, "item-content-wrap")
     for group in group_unit:
         if f"第{chinese_group_list[a]}讲" in group.text:
@@ -48,8 +48,8 @@ for a in range(10):
         for unit in unit_list:
             if "【视频】" in unit.text:
                 video_list.append(unit)
-        unit = video_list[current_unit_num]
-        unit.click()
+    for video_unit in video_list:
+        video_unit.click()
         time.sleep(5)
         # find the video
         browser.switch_to.frame("h5player")
@@ -68,4 +68,3 @@ for a in range(10):
                 pass
         browser.switch_to.default_content()
         print(f"第{a-5}讲第{i+1}个视频播放完毕")
-        current_unit_num += 1
