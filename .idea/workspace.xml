@@ -21,21 +21,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "E:/SynologyDrive/Mark/Github Project/auto-liruyun",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/SynologyDrive/Mark/Github Project/auto-liruyun&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   },
-  "keyToStringList": {
-    "GitStage.ChangesTree.GroupingKeys": [
-      "directory",
-      "module",
-      "repository"
+  &quot;keyToStringList&quot;: {
+    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
+      &quot;directory&quot;,
+      &quot;module&quot;,
+      &quot;repository&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
@@ -52,11 +52,30 @@
       <option name="project" value="LOCAL" />
       <updated>1685435411137</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="三个类的基本实现&#10;&#10;目前仅仅简单构造了三个类，不具备与网页交互的功能，仅仅初步实现遍历课程下的单元与视频的功能">
+      <created>1685436249849</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1685436249849</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="三个类的基本实现，暂时不具备与网页互动功能，初步实现遍历课程，单元与视频功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="三个类的基本实现，暂时不具备与网页互动功能，初步实现遍历课程，单元与视频功能" />
+    <MESSAGE value="三个类的基本实现&#10;&#10;目前仅仅简单构造了三个类，不具备与网页交互的功能，仅仅初步实现遍历课程下的单元与视频的功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="三个类的基本实现&#10;&#10;目前仅仅简单构造了三个类，不具备与网页交互的功能，仅仅初步实现遍历课程下的单元与视频的功能" />
   </component>
 </project>
