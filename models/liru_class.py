@@ -1,9 +1,14 @@
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+
+
 class LiRuClass:
 
-    def __init__(self, title: str, unit_list):
-        self._title = title  # 课程标题
+    def __init__(self):
+        self._driver = webdriver.Chrome()  # 该属性存储一个网站
+        self._title = None  # 课程标题
         self._index = 0  # 用于当前遍历unit_list的索引
-        self._unit_list = unit_list  # 本课程的所有单元所组成的列表
+        self._unit_list = None  # 本课程的所有单元所组成的列表
         self._parent = None  # 根节点没有父节点
 
     def __iter__(self):
